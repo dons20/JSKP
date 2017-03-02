@@ -1,0 +1,24 @@
+#navigation {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+#hero {
+  background-image: url("../images/home.jpg"); }
+
+.uk-navbar-dropdown li {
+  overflow: hidden;
+  position: relative; }
+  .uk-navbar-dropdown li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 4px;
+    background: deepskyblue;
+    transition-property: "left", "right";
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out; }
+  .uk-navbar-dropdown li:hover:before, .uk-navbar-dropdown li:focus:before, .uk-navbar-dropdown li:active:before {
+    left: 0;
+    right: 0; }
