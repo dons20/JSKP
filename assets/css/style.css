@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg) 50% 50%/cover no-repeat;
   z-index: -9999; }
 
-#hero-heading {
+.uk-heading-hero {
   color: #fff !important;
   text-shadow: 2px 2px 5px #000; }
 
