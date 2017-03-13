@@ -4,34 +4,55 @@
         <title>JSK Properties</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/css/uikit.min.css" />
-        <link href="assets/css/style.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />
+        <link href="assets/css/hamburgers.min.css" rel="stylesheet" />
+        <link href="assets/css/style.min.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="uk-position-relative uk-height-viewport">
-            <?php include 'includes/navigation.html' ?>
-            <div id="hero" class="uk-position-top uk-height-viewport uk-background-cover">
+
+        <?php include 'includes/mobile-navigation.html' ?>
+
+        <div id="hero" class="uk-section uk-section-media uk-section-xlarge uk-background-cover" uk-height-viewport>
+            <div id="navigation" class="uk-section uk-section-secondary uk-section-xsmall uk-padding-small uk-preserve-color uk-position-top" uk-sticky="media: 1100;">
+                <?php include 'includes/main-navigation.html' ?>
+            </div>
+            <div id="hero-heading" class="uk-container uk-text-center">
+                <h1 class="uk-heading-hero uk-light">JSK Properties</h1>
+                <button class="uk-button uk-button-primary uk-button-large">Learn More</button>
             </div>
         </div>
 
         <div class="uk-section uk-section-muted">
             <div class="uk-container">
                 <div class="uk-flex-center uk-child-width-expand@m" uk-grid>
-                    <div>
+                    <div class="uk-width-1-1"> 
+                        <h1 class="uk-heading-line uk-text-center"><span>About Us</span></h1>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div>
+                            <p>We are more than just real estate investors, who are looking to unite people with good homes. We offer properties for sale or rent, which our clients are excited to make into happy homes.  On the other hand, we also offer a quick-sale option to the regular homeowner, and hassle-free solutions to challenged and distressed  homeowners wanting to quickly sell their houses &hellip;</p>
+                            <button class="uk-button uk-button-primary uk-button-large">Read More</button>
+                        <div>
+                        <div>
+                            <img class="uk-responsive-height" src="assets/images/fulllogo.jpg" />
+                        </div>
+                    </div>
+                    <!-- <div>
                         <div class="uk-card uk-card-hover uk-card-large uk-card-default uk-card-body">
                             <h3 class="uk-card-title">Buy</h3>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-hover uk-card-large uk-card-primary uk-card-body">
-                            <h3 class="uk-card-title">Sell</h3>
+                            <h3 class="uk-card-title">Renovate</h3>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-hover uk-card-large uk-card-secondary uk-card-body">
-                            <h3 class="uk-card-title">Rent</h3>
+                            <h3 class="uk-card-title">Sell</h3>
                         </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
             </div>
         </div>
@@ -40,7 +61,10 @@
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
                 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/js/uikit.min.js" 
-                integrity="sha256-HM5Ln23ZwUKUp2XJmTYmSVWc7Ymwdbt8YyQX/k3fsY4=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js" 
+                integrity="sha256-LUEy7nYsrDZzEXVbDyFBiGH7w/7Jmy21CEB9Oha8hvc=" crossorigin="anonymous"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js" 
+                integrity="sha256-14DawicAGydmUlgILWilIY+jh281m4dnI9dPPUrW8rw=" crossorigin="anonymous"></script>-->
+        <script defer src="assets/js/scripts.min.js"></script>
     </body>
 </html>

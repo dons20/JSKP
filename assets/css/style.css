@@ -1,8 +1,16 @@
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg) 50% 50%/cover no-repeat;
+  z-index: -9999; }
+
+#hero-heading {
+  color: #fff !important;
+  text-shadow: 2px 2px 5px #000; }
+
 #navigation {
   background-color: rgba(0, 0, 0, 0.6); }
 
-#hero {
-  background-image: url("../images/home.jpg"); }
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #fff; }
 
 .uk-navbar-dropdown li {
   overflow: hidden;

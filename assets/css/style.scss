@@ -1,9 +1,29 @@
-#navigation {
-    background-color: rgba(#000, 0.6);
-}
+$white: #fff;
+$black: #000;
 
 #hero {
-    background-image: url('../images/home.jpg');
+    //background-image: url('../images/hero.jpg');
+    //background-color: linear-gradient(rgba($black, 0.25), rgba($black, 0.25));
+    background: 
+        linear-gradient(rgba($black, 0.4), rgba($black, 0.4)),
+        url(../images/hero.jpg) 50% 50% / cover no-repeat;
+    z-index: -9999;
+}
+
+#hero-heading {
+    color: $white !important;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#navigation {
+    background-color: rgba($black, 0.6);
+}
+
+.hamburger-inner {
+    background-color: $white;
+    &::before, &::after {
+        @extend .hamburger-inner;
+    }
 }
 
 .uk-navbar-dropdown li {
